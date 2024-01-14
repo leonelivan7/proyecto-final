@@ -1,0 +1,30 @@
+.main-inicio {
+    display: flex;
+    align-items: center;
+        img {
+            // display: flex;
+            // justify-content: end;
+            width: 60%;
+        }
+        .div-inicio {
+            // display: flex;
+            flex-direction: column;
+            h2 {
+                font-weight: bold;
+                font-size: 400%;
+                text-align: center;
+                align-items: center;
+                span {
+                    color: aqua;
+                }
+            }
+            button {
+                background-color: black;
+                color: white;
+                border-radius: 5%;
+                width: 50%;
+                padding: 1%;
+                margin-left: 25%;
+            }
+        }
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+}
+header .navbar .navbar-expand-lg .container-fluid .collapse .navbar-collapse .navbar-var .me-auto .mb-2 .mb-lg-0 {
+  text-align: center;
+}
+header .navbar .navbar-expand-lg .container-fluid .collapse .navbar-collapse .navbar-var .me-auto .mb-2 .mb-lg-0 .nav-item a {
+  color: white;
+}
+
+.main-inicio {
+  display: flex;
+  align-items: center;
+}
+.main-inicio img {
+  width: 60%;
+}
+.main-inicio .div-inicio {
+  flex-direction: column;
+}
+.main-inicio .div-inicio h2 {
+  font-weight: bold;
+  font-size: 400%;
+  text-align: center;
+  align-items: center;
+}
+.main-inicio .div-inicio h2 span {
+  color: aqua;
+}
+.main-inicio .div-inicio button {
+  background-color: black;
+  color: white;
+  border-radius: 5%;
+  width: 50%;
+  padding: 1%;
+  margin-left: 25%;
+}
+
+footer {
+  background-color: black;
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+footer section a img {
+  width: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

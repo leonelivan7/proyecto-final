@@ -1,0 +1,14 @@
+footer {
+    background-color: black;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        a {
+            img {
+                width: 40px;
+            }
+        }
+    }
+}

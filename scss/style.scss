@@ -1,0 +1,10 @@
+@import "./layout/estilos-generales";
+@import "./var/variables";
+@import "./components/mixin";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+@import "./components/media-tablet";
+@import "./components/media-mobile";
