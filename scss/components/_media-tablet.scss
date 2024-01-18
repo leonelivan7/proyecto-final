@@ -1,0 +1,172 @@
+/* MEDIA QUERY PARA TABLET */
+@media screen and (max-width: 1024px){
+/*MAIN INICIO*/
+.main-inicio {
+    .div-inicio {
+        div {
+            h1 {
+                font-size: 300%;
+            }
+            h3 {
+                font-size: 230%;
+            }
+        }
+    }
+}
+
+/*NOSOTROS*/
+.main-nosotros {
+    .section-nosotros {
+        h1 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 150%;
+        }
+    }
+    .section-nosotros1 {
+        p {
+            font-size: 150%;
+        }
+        section {
+            p {
+                font-size: 150%;
+            }
+        }
+        .div-nosotros {
+            div {
+                p {
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+    .section-nosotros2 {
+        h2 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 150%;
+        }
+    }
+}
+
+/*MAIN FRANQUICIAS*/
+.main-franquicias {
+    .div-franquicias {
+        img {
+            width: 50vw;
+        }
+        div {
+            h1 {
+                font-size: 290%;
+            }
+        }
+    }
+    .border-radius {
+        width: 70vw;
+    }
+}
+
+/*MAIN SUCURSALES*/
+
+/*MAIN HAMBURGUESAS*/
+.main-hamburguesas {
+    .section-hamburguesas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:"card1 card2"
+                            "card4 card5"
+                            "card7 card8"
+                            "card10 card11";
+                            .card1 {
+                                grid-area: card1;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card2 {
+                                grid-area: card2;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card3 {
+                                grid-area: card3;
+                                margin: 2%;
+                                width: 98%;
+                                display: none;
+                            }
+                            .card4 {
+                                grid-area: card4;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card5 {
+                                grid-area: card5;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card6 {
+                                grid-area: card6;
+                                margin: 2%;
+                                width: 98%;
+                                display: none;
+                            }
+                            .card7 {
+                                grid-area: card7;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card8 {
+                                grid-area: card8;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card9 {
+                                grid-area: card9;
+                                margin: 2%;
+                                width: 98%;
+                                display: none;
+                            }
+                            .card10 {
+                                grid-area: card10;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card11 {
+                                grid-area: card11;
+                                margin: 2%;
+                                width: 98%;
+                            }
+                            .card12 {
+                                grid-area: card12;
+                                margin: 2%;
+                                width: 98%;
+                                display: none;
+                            }
+    }
+}
+
+/*FOOTER*/
+footer {
+    flex-direction: column;
+    .logo-footer {
+        width: 60%;
+        margin-bottom: 2%;
+        border-bottom: solid 2px white;
+        // img {
+        //     width: 30%;
+        // }
+    }
+    .footer-inicio {
+        margin-bottom: 2%;
+        border-bottom: solid 2px white;
+        .div-footer {
+            margin-bottom: 2%;
+        }
+    }
+    .redes-sociales {
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+}
+}

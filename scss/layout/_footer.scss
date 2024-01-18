@@ -1,13 +1,100 @@
+/*FOOTER*/
 footer {
     background-color: black;
-    section {
+    padding: 1%;
+    @include bloque(flex, space-between, center);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    border-top: solid 1px nth($list: $colores, $n: 2);
+    .logo-footer {
+        @include bloque (flex, center, center);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        img {
+            width: 50%;
+        }
+        p {
+            color: nth($list: $colores, $n: 2);
+            text-align: center;
+        }
+    }
+    .footer-inicio {
         display: flex;
         justify-content: center;
+        column-gap: 10%;
+        width: 60%;
+        .div-footer {
+            @include bloque(flex, flex-start, flex-start);
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: flex-start;
+            flex-direction: column;
+            // display: flex;
+            // align-items: center;
+            // justify-content: flex-start;
+            // column-gap: 25px;
+            a {
+                margin-bottom: 3%;
+                color: nth($list: $colores, $n: 2);
+                text-decoration: none;
+                &:hover {
+                    color: yellow;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .div-footer1 {
+            @include bloque (flex, flex-start, flex-start);
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: flex-start;
+            flex-direction: column;
+            // display: flex;
+            // align-items: center;
+            // justify-content: flex-start;
+            // column-gap: 25px;
+            a {
+                margin-bottom: 3%;
+                color: nth($list: $colores, $n: 2);
+                text-decoration: none;
+                &:hover {
+                    color: yellow;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .div-footer2 {
+            @include bloque (flex, flex-start, flex-start);
+            // display: flex;
+            // align-items: flex-start;
+            // justify-content: flex-start;
+            flex-direction: column;
+            // display: flex;
+            // align-items: center;
+            // justify-content: flex-start;
+            // column-gap: 25px;
+            a {
+                margin-bottom: 3%;
+                color: nth($list: $colores, $n: 2);
+                text-decoration: none;
+                &:hover {
+                    color: yellow;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .redes-sociales {
+        display: flex;
         align-items: center;
         column-gap: 10px;
         a {
             img {
                 width: 40px;
+                height: auto;
             }
         }
     }

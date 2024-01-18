@@ -1,13 +1,32 @@
+/*HEADER*/
 header {
-    background-color: $negro;
-    .navbar .navbar-expand-lg {
+    background-color: nth($list: $colores, $n: 3);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: solid 1px nth($list: $colores, $n: 2);
+    .navbar {
         .container-fluid {
-            .collapse .navbar-collapse {
-                .navbar-var .me-auto .mb-2 .mb-lg-0 {
-                    text-align: center;
+            .navbar-brand {
+                img {
+                    width: 50%;
+                }
+            }
+            .navbar-toggler {
+                background-color: nth($list: $colores, $n: 2);
+                // .navbar-toggler-icon {
+                //     background-image: url(../../medios/menu-hamburguesa.png);
+                // }
+            }
+            .collapse {
+                .navbar-nav {
                     .nav-item {
-                        a {
-                            color: white;
+                        .nav-link {
+                            color: nth($list: $colores, $n: 2);
+                            &:hover {
+                                text-decoration: underline;
+                                color: yellow;
+                            }
                         }
                     }
                 }
@@ -15,5 +34,6 @@ header {
         }
     }
 }
+
 
 

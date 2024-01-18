@@ -4,55 +4,1329 @@
   box-sizing: border-box;
 }
 
+/*HEADER*/
 header {
   background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  border-bottom: solid 1px white;
 }
-header .navbar .navbar-expand-lg .container-fluid .collapse .navbar-collapse .navbar-var .me-auto .mb-2 .mb-lg-0 {
-  text-align: center;
+header .navbar .container-fluid .navbar-brand img {
+  width: 50%;
 }
-header .navbar .navbar-expand-lg .container-fluid .collapse .navbar-collapse .navbar-var .me-auto .mb-2 .mb-lg-0 .nav-item a {
+header .navbar .container-fluid .navbar-toggler {
+  background-color: white;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   color: white;
 }
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+  color: yellow;
+}
 
+/*MAIN INICIO*/
 .main-inicio {
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-.main-inicio img {
-  width: 60%;
 }
 .main-inicio .div-inicio {
-  flex-direction: column;
+  display: flex;
+  transition: 2s;
 }
-.main-inicio .div-inicio h2 {
-  font-weight: bold;
-  font-size: 400%;
-  text-align: center;
-  align-items: center;
+.main-inicio .div-inicio img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
 }
-.main-inicio .div-inicio h2 span {
-  color: aqua;
+.main-inicio .div-inicio img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
 }
-.main-inicio .div-inicio button {
-  background-color: black;
-  color: white;
-  border-radius: 5%;
-  width: 50%;
-  padding: 1%;
-  margin-left: 25%;
-}
-
-footer {
-  background-color: black;
-}
-footer section {
+.main-inicio .div-inicio div {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.main-inicio .div-inicio div h1 {
+  font-weight: bold;
+  font-size: 500%;
+  align-items: center;
+  line-height: 0.9em;
+}
+.main-inicio .div-inicio div h3 {
+  font-weight: bold;
+  font-size: 300%;
+  align-items: center;
+  line-height: 0.9em;
+}
+.main-inicio .div-inicio div a {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+}
+.main-inicio .div-inicio div a:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: white;
+}
+
+/*MAIN NOSOTROS*/
+.main-nosotros .section-nosotros {
+  padding: 5% 0% 5% 0%;
+  background-color: pink;
+  height: auto;
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-nosotros .section-nosotros h1 {
+  width: 60vw;
+  font-size: 400%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.main-nosotros .section-nosotros p {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  width: 80vw;
+}
+.main-nosotros .section-nosotros1 {
+  background-color: bisque;
+  height: auto;
+}
+.main-nosotros .section-nosotros1 p {
+  padding: 5% 0% 5% 0%;
+  text-align: center;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: 500;
+}
+.main-nosotros .section-nosotros1 section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nosotros .section-nosotros1 section img {
+  width: 60vw;
+  height: auto;
+  margin: 1%;
+  border: solid 1px black;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.main-nosotros .section-nosotros1 section img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-nosotros .section-nosotros1 section p {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  width: 80vw;
+}
+.main-nosotros .section-nosotros1 .div-nosotros {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nosotros .section-nosotros1 .div-nosotros img {
+  width: 60vw;
+  height: auto;
+  margin: 1%;
+  border: solid 1px black;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.main-nosotros .section-nosotros1 .div-nosotros img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-nosotros .section-nosotros1 .div-nosotros div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.main-nosotros .section-nosotros1 .div-nosotros div p {
+  margin: 0;
+  font-size: 200%;
+  font-weight: 500;
+}
+.main-nosotros .section-nosotros2 {
+  background-color: violet;
+  height: auto;
+  border-top: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0% 5% 0%;
+}
+.main-nosotros .section-nosotros2 h2 {
+  width: 60vw;
+  font-size: 400%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.main-nosotros .section-nosotros2 p {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  width: 80vw;
+}
+
+/*MAIN FRANQUICIAS*/
+.main-franquicias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-franquicias .div-franquicias {
+  display: flex;
+  transition: 2s;
+  width: 100%;
+}
+.main-franquicias .div-franquicias img {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-franquicias .div-franquicias img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-franquicias .div-franquicias div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.main-franquicias .div-franquicias div h1 {
+  font-weight: bold;
+  font-size: 350%;
+  align-items: center;
+  line-height: 0.9em;
+}
+.main-franquicias .div-franquicias div h1 p {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  width: 80vw;
+}
+.main-franquicias .border-radius {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  color: black;
+  width: 50%;
+  border-radius: 50px;
+  margin: 4% 0% 2% 0%;
+}
+.main-franquicias .border-radius p {
+  text-align: center;
+  padding: 3%;
+}
+.main-franquicias .formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.main-franquicias .formulario input {
+  margin: 1%;
+  width: 40vw;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+  border: solid 0px transparent;
+  padding: 2%;
+}
+.main-franquicias .formulario button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  margin-top: 5%;
+  padding: 1%;
+}
+
+/*MAIN SUCURSALES*/
+.main-sucursales div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+.main-sucursales div h1 {
+  padding: 5%;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 400%;
+}
+.main-sucursales div img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-sucursales div img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-sucursales .section-sucursales {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-sucursales .section-sucursales .div-sucursales {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.main-sucursales .section-sucursales .div-sucursales img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-sucursales .section-sucursales .div-sucursales img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-sucursales .section-sucursales .div-sucursales div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-sucursales .section-sucursales .div-sucursales div a {
+  color: yellowgreen;
+}
+.main-sucursales .section-sucursales .div-sucursales1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.main-sucursales .section-sucursales .div-sucursales1 img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-sucursales .section-sucursales .div-sucursales1 img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-sucursales .section-sucursales .div-sucursales1 div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-sucursales .section-sucursales .div-sucursales1 div a {
+  color: yellowgreen;
+}
+.main-sucursales .section-sucursales1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-sucursales .section-sucursales1 .div-sucursales2 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.main-sucursales .section-sucursales1 .div-sucursales2 img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-sucursales .section-sucursales1 .div-sucursales2 img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-sucursales .section-sucursales1 .div-sucursales2 div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-sucursales .section-sucursales1 .div-sucursales2 div a {
+  color: yellowgreen;
+}
+.main-sucursales .section-sucursales1 .div-sucursales3 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.main-sucursales .section-sucursales1 .div-sucursales3 img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+}
+.main-sucursales .section-sucursales1 .div-sucursales3 img:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-sucursales .section-sucursales1 .div-sucursales3 div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-sucursales .section-sucursales1 .div-sucursales3 div a {
+  color: yellowgreen;
+}
+
+/*MAIN HAMBURGUESAS*/
+.main-hamburguesas {
+  background-color: palegoldenrod;
+}
+.main-hamburguesas h1 {
+  text-align: center;
+  padding: 5%;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 400%;
+  align-items: center;
+}
+.main-hamburguesas .section-hamburguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  padding-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card1 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card1:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card1 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card1 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card1 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card1 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card1 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card2 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card2:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card2 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card2 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card2 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card2 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card2 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card3 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card3:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card3 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card3 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card3 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card3 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card3 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card4 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card4:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card4 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card4 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card4 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card4 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card4 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card5 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card5:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card5 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card5 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card5 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card5 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card5 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card6 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card6:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card6 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card6 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card6 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card6 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card6 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card7 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card7:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card7 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card7 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card7 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card7 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card7 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card8 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card8:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card8 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card8 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card8 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card8 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card8 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card9 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card9:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card9 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card9 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card9 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card9 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card9 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card10 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card10:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card10 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card10 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card10 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card10 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card10 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card11 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card11:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card11 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card11 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card11 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card11 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card11 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+.main-hamburguesas .section-hamburguesas .card12 {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: 1%;
+  overflow: hidden;
+  width: 30vw;
+  height: 100%;
+}
+.main-hamburguesas .section-hamburguesas .card12:hover {
+  opacity: 0.9;
+  box-shadow: 0px 0px 75px 5px rgba(99, 84, 84, 0.75);
+}
+.main-hamburguesas .section-hamburguesas .card12 .card-body {
+  display: grid;
+  justify-items: center;
+}
+.main-hamburguesas .section-hamburguesas .card12 .card-body h5 {
+  padding-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+.main-hamburguesas .section-hamburguesas .card12 .card-body p {
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 0;
+}
+.main-hamburguesas .section-hamburguesas .card12 .card-body .btn {
+  border: solid 2px black;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.main-hamburguesas .section-hamburguesas .card12 .card-body .btn:hover {
+  border: solid 2px black;
+  background-color: gray;
+  color: black;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px white;
+}
+footer .logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .logo-footer img {
+  width: 50%;
+}
+footer .logo-footer p {
+  color: white;
+  text-align: center;
+}
+footer .footer-inicio {
+  display: flex;
+  justify-content: center;
+  column-gap: 10%;
+  width: 60%;
+}
+footer .footer-inicio .div-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .footer-inicio .div-footer a {
+  margin-bottom: 3%;
+  color: white;
+  text-decoration: none;
+}
+footer .footer-inicio .div-footer a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+footer .footer-inicio .div-footer1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .footer-inicio .div-footer1 a {
+  margin-bottom: 3%;
+  color: white;
+  text-decoration: none;
+}
+footer .footer-inicio .div-footer1 a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+footer .footer-inicio .div-footer2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .footer-inicio .div-footer2 a {
+  margin-bottom: 3%;
+  color: white;
+  text-decoration: none;
+}
+footer .footer-inicio .div-footer2 a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+footer .redes-sociales {
+  display: flex;
+  align-items: center;
   column-gap: 10px;
 }
-footer section a img {
+footer .redes-sociales a img {
   width: 40px;
+  height: auto;
+}
+
+/* MEDIA QUERY PARA TABLET */
+@media screen and (max-width: 1024px) {
+  /*MAIN INICIO*/
+  .main-inicio .div-inicio div h1 {
+    font-size: 300%;
+  }
+  .main-inicio .div-inicio div h3 {
+    font-size: 230%;
+  }
+  /*NOSOTROS*/
+  .main-nosotros .section-nosotros h1 {
+    font-size: 300%;
+  }
+  .main-nosotros .section-nosotros p {
+    font-size: 150%;
+  }
+  .main-nosotros .section-nosotros1 p {
+    font-size: 150%;
+  }
+  .main-nosotros .section-nosotros1 section p {
+    font-size: 150%;
+  }
+  .main-nosotros .section-nosotros1 .div-nosotros div p {
+    font-size: 150%;
+  }
+  .main-nosotros .section-nosotros2 h2 {
+    font-size: 300%;
+  }
+  .main-nosotros .section-nosotros2 p {
+    font-size: 150%;
+  }
+  /*MAIN FRANQUICIAS*/
+  .main-franquicias .div-franquicias img {
+    width: 50vw;
+  }
+  .main-franquicias .div-franquicias div h1 {
+    font-size: 290%;
+  }
+  .main-franquicias .border-radius {
+    width: 70vw;
+  }
+  /*MAIN SUCURSALES*/
+  /*MAIN HAMBURGUESAS*/
+  .main-hamburguesas .section-hamburguesas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "card1 card2" "card4 card5" "card7 card8" "card10 card11";
+  }
+  .main-hamburguesas .section-hamburguesas .card1 {
+    grid-area: card1;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card2 {
+    grid-area: card2;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card3 {
+    grid-area: card3;
+    margin: 2%;
+    width: 98%;
+    display: none;
+  }
+  .main-hamburguesas .section-hamburguesas .card4 {
+    grid-area: card4;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card5 {
+    grid-area: card5;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card6 {
+    grid-area: card6;
+    margin: 2%;
+    width: 98%;
+    display: none;
+  }
+  .main-hamburguesas .section-hamburguesas .card7 {
+    grid-area: card7;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card8 {
+    grid-area: card8;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card9 {
+    grid-area: card9;
+    margin: 2%;
+    width: 98%;
+    display: none;
+  }
+  .main-hamburguesas .section-hamburguesas .card10 {
+    grid-area: card10;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card11 {
+    grid-area: card11;
+    margin: 2%;
+    width: 98%;
+  }
+  .main-hamburguesas .section-hamburguesas .card12 {
+    grid-area: card12;
+    margin: 2%;
+    width: 98%;
+    display: none;
+  }
+  /*FOOTER*/
+  footer {
+    flex-direction: column;
+  }
+  footer .logo-footer {
+    width: 60%;
+    margin-bottom: 2%;
+    border-bottom: solid 2px white;
+  }
+  footer .footer-inicio {
+    margin-bottom: 2%;
+    border-bottom: solid 2px white;
+  }
+  footer .footer-inicio .div-footer {
+    margin-bottom: 2%;
+  }
+  footer .redes-sociales {
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+}
+/* MEDIA QUERY PARA MOBILE */
+@media screen and (max-width: 768px) {
+  /*MAIN INICIO*/
+  .main-inicio .div-inicio {
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  .main-inicio .div-inicio img {
+    width: 90vw;
+  }
+  .main-inicio .div-inicio div {
+    width: 80vw;
+  }
+  .main-inicio .div-inicio div h1 {
+    width: 80%;
+    font-size: 160%;
+    margin: 0;
+    padding: 1%;
+  }
+  .main-inicio .div-inicio div h3 {
+    width: 80%;
+    font-size: 160%;
+    margin: 0;
+    padding: 1%;
+  }
+  .main-inicio .div-inicio div a {
+    width: auto;
+    padding: 3%;
+  }
+  /*NOSOTROS*/
+  .main-nosotros .section-nosotros h1 {
+    font-size: 200%;
+  }
+  .main-nosotros .section-nosotros p {
+    font-size: 100%;
+  }
+  .main-nosotros .section-nosotros1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros .section-nosotros1 p {
+    font-size: 100%;
+    text-align: center;
+    width: 80vw;
+  }
+  .main-nosotros .section-nosotros1 section {
+    flex-direction: column;
+  }
+  .main-nosotros .section-nosotros1 section img {
+    width: 90vw;
+  }
+  .main-nosotros .section-nosotros1 section p {
+    font-size: 100%;
+    width: 85vw;
+  }
+  .main-nosotros .section-nosotros1 .div-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nosotros .section-nosotros1 .div-nosotros img {
+    width: 90vw;
+  }
+  .main-nosotros .section-nosotros1 .div-nosotros div p {
+    font-size: 100%;
+    width: 85vw;
+  }
+  .main-nosotros .section-nosotros2 h2 {
+    font-size: 200%;
+  }
+  .main-nosotros .section-nosotros2 p {
+    font-size: 100%;
+  }
+  /*MAIN FRANQUICIAS*/
+  .main-franquicias .div-franquicias {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main-franquicias .div-franquicias img {
+    width: 90vw;
+  }
+  .main-franquicias .div-franquicias div h1 {
+    font-size: 200%;
+    padding: 5%;
+    text-decoration: underline;
+  }
+  .main-franquicias .div-franquicias div p {
+    display: none;
+  }
+  .main-franquicias .border-radius {
+    width: 90vw;
+    height: auto;
+  }
+  .main-franquicias .formulario form input {
+    width: 80vw;
+  }
+  /*MAIN SUCURSALES*/
+  .main-sucursales div h1 {
+    font-size: 200%;
+  }
+  .main-sucursales .section-sucursales {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .main-sucursales .section-sucursales .div-sucursales {
+    margin-bottom: 10%;
+  }
+  .main-sucursales .section-sucursales .div-sucursales img {
+    width: 50vw;
+  }
+  .main-sucursales .section-sucursales .div-sucursales p {
+    text-align: center;
+  }
+  .main-sucursales .section-sucursales .div-sucursales1 {
+    margin-bottom: 10%;
+  }
+  .main-sucursales .section-sucursales .div-sucursales1 img {
+    width: 50vw;
+  }
+  .main-sucursales .section-sucursales .div-sucursales1 p {
+    text-align: center;
+  }
+  .main-sucursales .section-sucursales1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales2 {
+    margin-bottom: 10%;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales2 img {
+    width: 50vw;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales2 p {
+    text-align: center;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales3 {
+    margin-bottom: 10%;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales3 img {
+    width: 50vw;
+  }
+  .main-sucursales .section-sucursales1 .div-sucursales3 p {
+    text-align: center;
+  }
+  /*MAIN HAMBURGUESAS*/
+  .main-hamburguesas h1 {
+    font-size: 200%;
+  }
+  .main-hamburguesas .section-hamburguesas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .main-hamburguesas .section-hamburguesas .card1 {
+    margin: 0% 1% 1% 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card2 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card4 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card5 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card7 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card8 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card10 {
+    margin: 1%;
+    width: 80vw;
+  }
+  .main-hamburguesas .section-hamburguesas .card11 {
+    margin: 1% 1% 2% 1%;
+    width: 80vw;
+  }
+  /*FOOTER*/
+  footer .logo-footer {
+    text-align: center;
+  }
+  footer .footer-inicio {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

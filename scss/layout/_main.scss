@@ -1,30 +1,815 @@
+/*MAIN INICIO*/
 .main-inicio {
     display: flex;
+    flex-direction: column;
     align-items: center;
-        img {
-            // display: flex;
-            // justify-content: end;
-            width: 60%;
-        }
         .div-inicio {
-            // display: flex;
-            flex-direction: column;
-            h2 {
-                font-weight: bold;
-                font-size: 400%;
-                text-align: center;
-                align-items: center;
-                span {
-                    color: aqua;
+            display: flex;
+            transition: 2s;
+            img {
+                width: 60%;
+                height: 100%;
+                object-fit: cover;
+                border: solid 2px nth($list: $colores, $n: 3);
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
                 }
             }
-            button {
-                background-color: black;
-                color: white;
-                border-radius: 5%;
-                width: 50%;
-                padding: 1%;
-                margin-left: 25%;
+            div {
+                @include bloque(flex, center, center);
+                flex-direction: column;
+                text-align: center;
+                h1 {
+                    @include titulo(bold, 500%, center, 0.9em);
+                    // font-weight: bold;
+                    // font-size: 500%;
+                    // align-items: center;
+                    // line-height: 0.9em;
+                }
+                h3 {
+                    @include titulo(bold, 300%, center, 0.9em);
+                    // font-weight: bold;
+                    // font-size: 350%;
+                    // align-items: center;
+                    // line-height: 0.9em;
+                }
+                a {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: white;
+                    }
+                }
             }
         }
+} 
+
+/*MAIN NOSOTROS*/
+.main-nosotros {
+    .section-nosotros {
+        padding: 5% 0% 5% 0%;
+        background-color: nth($list: $colores, $n: 1);
+        height: auto;
+        border-bottom: solid 1px black;
+        @include bloque(flex, center, center);
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        h1 {
+            width: 60vw;
+            font-size: 400%;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        p {
+            text-align: center;
+            font-size: 200%;
+            font-weight: 500;
+            width: 80vw;
+        }
+    }
+    .section-nosotros1 {
+        background-color: bisque;
+        height: auto;
+        p {
+            padding: 5% 0% 5% 0%;
+            text-align: center;
+            justify-content: center;
+            font-size: 200%;
+            font-weight: 500;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 60vw;
+                height: auto;
+                margin: 1%;
+                border: solid 1px black;
+                border-radius: 15px;
+                object-fit: cover;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 200%;
+                font-weight: 500;
+                width: 80vw;
+                // text-align: center;
+                // font-size: 150%;
+                // font-weight: 500;
+                // width: 80vw;
+            }
+        }
+        .div-nosotros {
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 60vw;
+                height: auto;
+                margin: 1%;
+                border: solid 1px black;
+                border-radius: 15px;
+                object-fit: cover;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+            }
+            div {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                p {
+                    margin: 0;
+                    font-size: 200%;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .section-nosotros2 {
+        background-color: violet;
+        height: auto;
+        border-top: solid 1px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 0% 5% 0%;
+        h2 {
+            width: 60vw;
+            font-size: 400%;
+            font-weight: bold;
+            text-decoration: underline;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        p {
+            text-align: center;
+            font-size: 200%;
+            font-weight: 500;
+            width: 80vw;
+        }
+    }
+}
+
+/*MAIN FRANQUICIAS*/
+.main-franquicias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .div-franquicias {
+            display: flex;
+            transition: 2s;
+            width: 100%;
+            img {
+                width: 60%;
+                height: 100%;
+                object-fit: cover;
+                border: solid 2px black;
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+            }
+            div {
+                @include bloque(flex, center, center);
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                h1 {
+                    font-weight: bold;
+                    font-size: 350%;
+                    align-items: center;
+                    line-height: 0.9em;
+                    // padding: 5%;
+                p {
+                    text-align: center;
+                    font-size: 200%;
+                    font-weight: 500;
+                    width: 80vw;
+                }
+                }
+            }
+        }
+    .border-radius {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+        color: black;
+        width: 50%;
+        border-radius: 50px;
+        margin: 4% 0% 2% 0%;
+        p {
+            text-align: center;
+            padding: 3%;
+        }
+    }
+    .formulario {
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5%;
+        }
+        input {
+            margin: 1%;
+            width: 40vw;
+            border-radius: 20px;
+            background-color: #F5F5F5;
+            border: solid 0px transparent;
+            padding: 2%;
+        }
+        button {
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            width: 50%;
+            margin-top: 5%;
+            padding: 1%;
+        }
+    }
+}
+
+/*MAIN SUCURSALES*/
+.main-sucursales {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        h1 {
+            padding: 5%;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 400%;
+            // align-items: center;
+            // line-height: 0.9em;
+        }
+        img {
+            // width: 60%;
+            // height: 100%;
+            width: 80%;
+            height: auto;
+            object-fit: cover;
+            border: solid 2px black;
+            border-radius: 15px;
+            margin: 1%;
+            &:hover {
+                @include hover-img;
+                // opacity: 0.9;
+                // box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+            }
+            // width: 80%;
+            // height: 20%;
+            // object-fit: cover;
+        }
+    }
+    .section-sucursales {
+        display: flex;
+        justify-content: space-evenly;
+        .div-sucursales {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img {
+                // width: 60%;
+                // height: 100%;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                border: solid 2px black;
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+                // width: 80%;
+                // height: auto;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: yellowgreen;
+                }
+            }
+        }
+        .div-sucursales1 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img {
+                // width: 60%;
+                // height: 100%;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                border: solid 2px black;
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+                // width: 80%;
+                // height: auto;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: yellowgreen;
+                }
+            }
+        }
+    }
+    .section-sucursales1 {
+        display: flex;
+        justify-content: space-evenly;
+        .div-sucursales2 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img {
+                // width: 60%;
+                // height: 100%;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                border: solid 2px black;
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+                // width: 80%;
+                // height: auto;
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: yellowgreen;
+                }
+            }
+        }
+        .div-sucursales3 {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img {
+                // width: 60%;
+                // height: 100%;
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                border: solid 2px black;
+                border-radius: 15px;
+                margin: 1%;
+                &:hover {
+                    opacity: 0.9;
+                    box-shadow: 0px 0px 75px 5px rgba(99,84,84,0.75);
+                }
+            }
+            div {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    color: yellowgreen;
+                }
+            }
+        }
+    }
+}
+
+/*MAIN HAMBURGUESAS*/
+.main-hamburguesas {
+    background-color: palegoldenrod;
+    h1 {
+        text-align: center;
+        padding: 5%;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 400%;
+        align-items: center;
+    }
+    .section-hamburguesas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        justify-items: center;
+        padding-bottom: 2%;
+        // display: flex;
+        // justify-content: space-evenly;
+        .card1 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card2 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card3 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card4 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card5 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card6 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card7 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card8 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card9 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card10 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card11 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .card12 {
+            @include card-burguer;
+            .card-body {
+                display: grid;
+                justify-items: center;
+                h5 {
+                    padding-top: 2%;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                p {
+                    text-align: center;
+                    padding: 1%;
+                    margin-bottom: 0;
+                }
+                .btn {
+                    border: solid 2px black;
+                    background-color: black;
+                    text-decoration: none;
+                    color: white;
+                    border-radius: 20px;
+                    width: 50%;
+                    padding: 1%;
+                    margin-bottom: 2%;
+                    &:hover {
+                        border: solid 2px black;
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
 }
